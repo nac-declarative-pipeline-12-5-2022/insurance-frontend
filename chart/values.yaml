@@ -18,14 +18,14 @@ ingress:
   enabled: true
   className: nginx
   hosts:
-    - host: REPLACE_GITHUB_ORG.staging.workshop.cb-sa.io
+    - host: nac-declarative-pipeline-12-5-2022.staging.workshop.cb-sa.io
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls:
     - secretName: staging-tls
       hosts:
-        - REPLACE_GITHUB_ORG.staging.workshop.cb-sa.io
+        - nac-declarative-pipeline-12-5-2022.staging.workshop.cb-sa.io
 
 backendUrl: https://example.com
 fmToken: abcdefg123456789
